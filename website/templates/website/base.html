@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+    <title>PW - LAB6</title>
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1>Primeira Web Page Django</h1>
+        <p>Teste Primeira Vez Django</p>
+        <nav>
+            <a class="btn btn-info" href="home">Home</a>
+            <a class="btn btn-info" href="pag1">Page1</a>
+            <a class="btn btn-info" href="pag2">Page2</a>
+        </nav>
+    </header>
+    <article>
+        <main class="col-sm-6">
+            {% block main %}
+            {%  endblock main %}
+        </main>
+        <aside class="col-sm-6">
+            {% load static %}
+            <img src="{% static 'website/images/pw.jpg' %}">
+        </aside>
+    </article>
+    <footer>Pedro Costa - ULHT - PW - (2020/2021)</footer>
+</body>
+</html>
