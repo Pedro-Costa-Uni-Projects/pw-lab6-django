@@ -5,7 +5,7 @@ import datetime
 # Create your views here.
 def home_page_view(request):
     context = {
-        'agora': datetime.datetime.now(),
+        'time': datetime.datetime.now(),
     }
     return render(request, 'website/home.html', context)
 
